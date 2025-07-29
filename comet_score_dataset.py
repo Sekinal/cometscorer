@@ -84,7 +84,7 @@ def score_en_es_dataset():
     # Save the entire scored dataset to a CSV file for analysis
     output_filename = "opus_en_es_wmt22_scored.csv"
     print(f"\nSaving scored dataset to '{output_filename}'...")
-    scored_dataset.to_csv(output_filename, index=False)
+    scored_dataset.to_parquet(output_filename, index=False)
     print("Done!")
 
 
